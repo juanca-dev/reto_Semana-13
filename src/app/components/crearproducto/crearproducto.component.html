@@ -1,0 +1,28 @@
+<h1>Crear un Nuevo Producto</h1>
+<div>
+  <label clas="form-label">
+    Nombre Producto
+  </label>
+  <input type="text" class="form-control" placeholder="" [(ngModel)] = "nuevoProducto.nombre" >  
+</div>
+<div>
+  <label class="form-label">
+    Descripción
+  </label>
+  <input type="text" class="form-control" placeholder="" [(ngModel)] = "nuevoProducto.descripcion" >
+</div>
+<div>
+  <label class="form-label">
+    Precio  
+</label>
+  <input type="text" class="form-control" placeholder="S/" [(ngModel)] = "nuevoProducto.precio" >
+</div>
+<div>
+  <label class="form-label">
+   Imagen
+  </label>
+  <input type="text" class="form-control" placeholder="Ej. picsum.com/photo.jpg" [(ngModel)] = "nuevoProducto.imagen" >
+  <button class="btn btn-primary" (click)="crearTarea()">
+    Crear Producto
+  </button>
+</div>
